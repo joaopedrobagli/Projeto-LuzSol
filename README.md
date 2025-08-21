@@ -18,16 +18,4 @@ Uma landing page moderna e responsiva para uma empresa fictícia de soluções s
 - Font Awesome para ícones
 - Design moderno com variáveis CSS
 
-## 📋 Pré-requisitos
 
-Nenhum! Basta clonar o repositório e abrir o arquivo `index.html` em qualquer navegador moderno.
-
-```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/ecotech-landing-page.git
-
-# Entre no diretório
-cd ecotech-landing-page
-
-# Abra no navegador
-open index.html
