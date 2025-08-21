@@ -1,4 +1,4 @@
-# EcoTech - Landing Page para Soluções Sustentáveis
+# SolLuz - Landing Page para Soluções Sustentáveis
 
 Uma landing page moderna e responsiva para uma empresa fictícia de soluções sustentáveis, demonstrando habilidades em desenvolvimento frontend com elementos interativos.
 
