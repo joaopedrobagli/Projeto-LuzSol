@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuzSol</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-leaf"></i>
+                    <span>LuzSol</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#features">Soluções</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+              
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Inovação Sustentável para um Futuro Melhor</h1>
+            <p>Descubra soluções tecnológicas avançadas para reduzir seu impacto ambiental e promover a sustentabilidade empresarial</p>
+            
+        </div>
+    </section>
+
+  
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Soluções Sustentáveis</h2>
+                <p>Oferecemos tecnologias inovadoras para ajudar sua empresa a ser mais ecológica e eficiente</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <h3>Energia Solar</h3>
+                    <p>Sistemas de energia solar personalizados para reduzir custos e emissões de carbono.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Gestão de Resíduos</h3>
+                    <p>Tecnologia inteligente para otimizar a reciclagem e reduzir desperdícios.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Conservação de Água</h3>
+                    <p>Sistemas de monitoramento e reutilização de água para conservar recursos hídricos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="interactive-demo">
+        <div class="container">
+            <div class="section-title">
+                <h2>Calculadora de Sustentabilidade</h2>
+                <p>Veja como pequenas mudanças podem fazer uma grande diferença</p>
+            </div>
+            <div class="eco-calculator">
+                <h3>Calcule sua redução de carbono</h3>
+                <div class="slider-container">
+                    <label>Energia solar utilizada (kWh):</label>
+                    <input type="range" min="0" max="1000" value="200" class="slider" id="energy-slider">
+                    <span id="energy-value">200 kWh</span>
+                </div>
+                <div class="slider-container">
+                    <label>Água reciclada (litros):</label>
+                    <input type="range" min="0" max="5000" value="1000" class="slider" id="water-slider">
+                    <span id="water-value">1000 litros</span>
+                </div>
+                <div class="slider-container">
+                    <label>Resíduos reciclados (kg):</label>
+                    <input type="range" min="0" max="500" value="100" class="slider" id="waste-slider">
+                    <span id="waste-value">100 kg</span>
+                </div>
+                <button class="cta-button" onclick="calculateSavings()">Calcular Impacto</button>
+                <div class="calculator-result" id="result">
+                    <h4>Seu Impacto Ambiental Positivo:</h4>
+                    <p id="carbon-saving">Redução de 120 kg de CO₂</p>
+                    <p id="water-saving">Conservação de 1000 litros de água</p>
+                    <p id="waste-saving">Desvio de 100 kg de aterro sanitário</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 id="client-count">0</h3>
+                    <p>Clientes Satisfeitos</p>
+                </div>
+                <div class="stat-item">
+                    <h3 id="project-count">0</h3>
+                    <p>Projetos Concluídos</p>
+                </div>
+                <div class="stat-item">
+                    <h3 id="co2-count">0</h3>
+                    <p>Toneladas de CO₂ Reduzidas</p>
+                </div>
+                <div class="stat-item">
+                    <h3 id="energy-count">0</h3>
+                    <p>MWh de Energia Gerada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Entre em Contato</h2>
+                <p>Pronto para tornar seu negócio mais sustentável? Fale conosco!</p>
+            </div>
+            <div class="form-container">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>LuzSol</h3>
+                    <p>Soluções inovadoras para um futuro sustentável através da tecnologia.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#features">Soluções</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. teste , 123</li>
+                        <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@SolLuz.com</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Conecte-se</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 João Pedro Bagli - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+<script src="js/script.js"></script>
+    </body>
+</html>
