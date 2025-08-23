@@ -25,7 +25,7 @@
             const water = parseInt(waterSlider.value);
             const waste = parseInt(wasteSlider.value);
             
-            const carbonReduction = energy * 0.6; // 0.6 kg CO₂ por kWh
+            const carbonReduction = energy * 0.6; 
             const waterSaved = water;
             const wasteDiverted = waste;
             
